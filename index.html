@@ -259,7 +259,7 @@ body{background:var(--bg);color:var(--white);font-family:'Plus Jakarta Sans',san
         <div class="form-group"><label class="flabel">Project / Brand Name *</label><input class="finput" type="text" placeholder="e.g. Rally Protocol" id="q-name"/></div>
         <div class="form-group"><label class="flabel">What does your project do? *</label><textarea class="ftextarea" placeholder="Describe your project in simple terms..." id="q-what"></textarea></div>
         <div class="form-group"><label class="flabel">What problem does it solve? *</label><textarea class="ftextarea" placeholder="What pain point are you addressing?" id="q-problem"></textarea></div>
-        <div class="step-nav"><div class="step-counter">1 / 7</div><button class="btn-primary" onclick="nextStep(1)">Continue →</button></div>
+        <div class="step-nav"><div class="step-counter">1 / 7</div><button class="btn-primary" data-onclick="nextStep(1)">Continue →</button></div>
       </div>
 
       <!-- STEP 2 -->
@@ -270,29 +270,29 @@ body{background:var(--bg);color:var(--white);font-family:'Plus Jakarta Sans',san
         <div class="form-group">
           <label class="flabel">Project Stage *</label>
           <div class="multi-grid" id="q-stage">
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-stage')" data-val="idea">💡 Idea Stage</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-stage')" data-val="pre-launch">🚀 Pre-Launch</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-stage')" data-val="just-launched">🎉 Just Launched</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-stage')" data-val="growing">📈 Growing</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-stage')" data-val="scaling">🔥 Scaling</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-stage')" data-val="idea">💡 Idea Stage</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-stage')" data-val="pre-launch">🚀 Pre-Launch</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-stage')" data-val="just-launched">🎉 Just Launched</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-stage')" data-val="growing">📈 Growing</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-stage')" data-val="scaling">🔥 Scaling</div>
           </div>
         </div>
         <div class="form-group">
           <label class="flabel">Project Category (select all that apply)</label>
           <div class="multi-grid" id="q-category">
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="defi">DeFi</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="nft">NFT</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="gamefi">GameFi</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="rwa">RWA</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="ai-web3">AI + Web3</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="fintech">Fintech</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="socialfi">SocialFi</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="infra">Infrastructure</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="dao">DAO</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="other">Other</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="defi">DeFi</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="nft">NFT</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="gamefi">GameFi</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="rwa">RWA</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="ai-web3">AI + Web3</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="fintech">Fintech</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="socialfi">SocialFi</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="infra">Infrastructure</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="dao">DAO</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="other">Other</div>
           </div>
         </div>
-        <div class="step-nav"><button class="btn-secondary" onclick="prevStep(2)">← Back</button><div class="step-counter">2 / 7</div><button class="btn-primary" onclick="nextStep(2)">Continue →</button></div>
+        <div class="step-nav"><button class="btn-secondary" data-onclick="prevStep(2)">← Back</button><div class="step-counter">2 / 7</div><button class="btn-primary" data-onclick="nextStep(2)">Continue →</button></div>
       </div>
 
       <!-- STEP 3 -->
@@ -303,28 +303,28 @@ body{background:var(--bg);color:var(--white);font-family:'Plus Jakarta Sans',san
         <div class="form-group">
           <label class="flabel">Primary Audience (select all that apply)</label>
           <div class="multi-grid" id="q-audience">
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="retail">Retail Investors</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="crypto-natives">Crypto Natives</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="developers">Web3 Developers</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="founders">Founders</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="vcs">VCs / Investors</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="african">African Market</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="global">Global Market</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="genz">Gen Z</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="millennials">Millennials</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="institutions">Institutions</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="retail">Retail Investors</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="crypto-natives">Crypto Natives</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="developers">Web3 Developers</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="founders">Founders</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="vcs">VCs / Investors</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="african">African Market</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="global">Global Market</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="genz">Gen Z</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="millennials">Millennials</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="institutions">Institutions</div>
           </div>
         </div>
         <div class="form-group"><label class="flabel">What is your audience's biggest pain point?</label><textarea class="ftextarea" placeholder="What keeps your target audience up at night?" id="q-painpoint"></textarea></div>
         <div class="form-group"><label class="flabel">Audience's average knowledge of crypto</label>
           <div class="multi-grid" id="q-knowledge">
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-knowledge')" data-val="beginner">🌱 Beginner</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-knowledge')" data-val="intermediate">📚 Intermediate</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-knowledge')" data-val="advanced">🧠 Advanced</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-knowledge')" data-val="mixed">🔀 Mixed</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-knowledge')" data-val="beginner">🌱 Beginner</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-knowledge')" data-val="intermediate">📚 Intermediate</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-knowledge')" data-val="advanced">🧠 Advanced</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-knowledge')" data-val="mixed">🔀 Mixed</div>
           </div>
         </div>
-        <div class="step-nav"><button class="btn-secondary" onclick="prevStep(3)">← Back</button><div class="step-counter">3 / 7</div><button class="btn-primary" onclick="nextStep(3)">Continue →</button></div>
+        <div class="step-nav"><button class="btn-secondary" data-onclick="prevStep(3)">← Back</button><div class="step-counter">3 / 7</div><button class="btn-primary" data-onclick="nextStep(3)">Continue →</button></div>
       </div>
 
       <!-- STEP 4 -->
@@ -335,19 +335,19 @@ body{background:var(--bg);color:var(--white);font-family:'Plus Jakarta Sans',san
         <div class="form-group">
           <label class="flabel">Tone of Voice (select all that apply)</label>
           <div class="multi-grid" id="q-tone">
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="professional">🎩 Professional</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="friendly">😊 Friendly</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="bold">💥 Bold</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="educational">📖 Educational</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="community-first">🤝 Community-First</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="humorous">😄 Humorous</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="visionary">🔭 Visionary</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="technical">⚙️ Technical</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="professional">🎩 Professional</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="friendly">😊 Friendly</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="bold">💥 Bold</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="educational">📖 Educational</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="community-first">🤝 Community-First</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="humorous">😄 Humorous</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="visionary">🔭 Visionary</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="technical">⚙️ Technical</div>
           </div>
         </div>
         <div class="form-group"><label class="flabel">Describe your brand in 3 words</label><input class="finput" type="text" placeholder="e.g. Innovative, Trustworthy, Bold" id="q-brand3"/></div>
         <div class="form-group"><label class="flabel">Any brands you admire or want to be compared to?</label><input class="finput" type="text" placeholder="e.g. Binance, Coinbase, Uniswap" id="q-admire"/></div>
-        <div class="step-nav"><button class="btn-secondary" onclick="prevStep(4)">← Back</button><div class="step-counter">4 / 7</div><button class="btn-primary" onclick="nextStep(4)">Continue →</button></div>
+        <div class="step-nav"><button class="btn-secondary" data-onclick="prevStep(4)">← Back</button><div class="step-counter">4 / 7</div><button class="btn-primary" data-onclick="nextStep(4)">Continue →</button></div>
       </div>
 
       <!-- STEP 5 -->
@@ -358,27 +358,27 @@ body{background:var(--bg);color:var(--white);font-family:'Plus Jakarta Sans',san
         <div class="form-group">
           <label class="flabel">Main Goals (select all that apply)</label>
           <div class="multi-grid" id="q-goals">
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="awareness">📢 Brand Awareness</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="community">👥 Community Building</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="leads">🎯 Lead Generation</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="investors">💼 Investor Attention</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="token">🪙 Token Launch</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="partnerships">🤝 Partnership Deals</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="retention">🔄 Community Retention</div>
-            <div class="multi-option" onclick="toggleMulti(this)" data-val="education">📚 Educate Market</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="awareness">📢 Brand Awareness</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="community">👥 Community Building</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="leads">🎯 Lead Generation</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="investors">💼 Investor Attention</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="token">🪙 Token Launch</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="partnerships">🤝 Partnership Deals</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="retention">🔄 Community Retention</div>
+            <div class="multi-option" data-onclick="toggleMulti(this)" data-val="education">📚 Educate Market</div>
           </div>
         </div>
         <div class="form-group"><label class="flabel">Timeline</label>
           <div class="multi-grid" id="q-timeline">
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-timeline')" data-val="1-month">1 Month</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-timeline')" data-val="3-months">3 Months</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-timeline')" data-val="6-months">6 Months</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-timeline')" data-val="12-months">12 Months</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-timeline')" data-val="ongoing">Ongoing</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-timeline')" data-val="1-month">1 Month</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-timeline')" data-val="3-months">3 Months</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-timeline')" data-val="6-months">6 Months</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-timeline')" data-val="12-months">12 Months</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-timeline')" data-val="ongoing">Ongoing</div>
           </div>
         </div>
         <div class="form-group"><label class="flabel">Success looks like... (what does winning mean to you?)</label><textarea class="ftextarea" placeholder="e.g. 10k Twitter followers, 5000 Discord members, first funding round..." id="q-success"></textarea></div>
-        <div class="step-nav"><button class="btn-secondary" onclick="prevStep(5)">← Back</button><div class="step-counter">5 / 7</div><button class="btn-primary" onclick="nextStep(5)">Continue →</button></div>
+        <div class="step-nav"><button class="btn-secondary" data-onclick="prevStep(5)">← Back</button><div class="step-counter">5 / 7</div><button class="btn-primary" data-onclick="nextStep(5)">Continue →</button></div>
       </div>
 
       <!-- STEP 6 -->
@@ -401,7 +401,7 @@ body{background:var(--bg);color:var(--white);font-family:'Plus Jakarta Sans',san
             <input class="finput" type="text" placeholder="Discord server" id="q-discord"/>
           </div>
         </div>
-        <div class="step-nav"><button class="btn-secondary" onclick="prevStep(6)">← Back</button><div class="step-counter">6 / 7</div><button class="btn-primary" onclick="nextStep(6)">Continue →</button></div>
+        <div class="step-nav"><button class="btn-secondary" data-onclick="prevStep(6)">← Back</button><div class="step-counter">6 / 7</div><button class="btn-primary" data-onclick="nextStep(6)">Continue →</button></div>
       </div>
 
       <!-- STEP 7 -->
@@ -414,14 +414,14 @@ body{background:var(--bg);color:var(--white);font-family:'Plus Jakarta Sans',san
         <div class="form-group"><label class="flabel">Anything else we should know?</label><textarea class="ftextarea" placeholder="Any context, constraints, or specific requests..." id="q-extra"></textarea></div>
         <div class="form-group"><label class="flabel">How did you hear about SiO Agency?</label>
           <div class="multi-grid" id="q-source">
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-source')" data-val="x">X / Twitter</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-source')" data-val="linkedin">LinkedIn</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-source')" data-val="referral">Referral</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-source')" data-val="google">Google</div>
-            <div class="multi-option single-select" onclick="selectSingle(this,'q-source')" data-val="other">Other</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-source')" data-val="x">X / Twitter</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-source')" data-val="linkedin">LinkedIn</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-source')" data-val="referral">Referral</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-source')" data-val="google">Google</div>
+            <div class="multi-option single-select" data-onclick="selectSingle(this,'q-source')" data-val="other">Other</div>
           </div>
         </div>
-        <div class="step-nav"><button class="btn-secondary" onclick="prevStep(7)">← Back</button><div class="step-counter">7 / 7</div><button class="btn-primary" onclick="submitOnboarding()">Submit Brief ✓</button></div>
+        <div class="step-nav"><button class="btn-secondary" data-onclick="prevStep(7)">← Back</button><div class="step-counter">7 / 7</div><button class="btn-primary" data-onclick="submitOnboarding()">Submit Brief ✓</button></div>
       </div>
 
       <!-- THANK YOU -->
@@ -451,8 +451,8 @@ body{background:var(--bg);color:var(--white);font-family:'Plus Jakarta Sans',san
       </div>
       <h2 style="font-family:'Fraunces',serif;font-size:24px;font-weight:700;color:var(--white);margin-bottom:6px;">Welcome back</h2>
       <p style="font-size:14px;color:var(--muted);margin-bottom:28px;">Sign in to your agency dashboard</p>
-      <div class="form-group"><label class="flabel">Password</label><input class="finput" type="password" id="login-pw" placeholder="Enter your password" onkeypress="if(event.key==='Enter')doLogin()"/></div>
-      <button class="btn-primary" style="width:100%;justify-content:center;margin-top:8px;" onclick="doLogin()">Sign In →</button>
+      <div class="form-group"><label class="flabel">Password</label><input class="finput" type="password" id="login-pw" placeholder="Enter your password" data-onkeypress="if(event.key==='Enter')doLogin()"/></div>
+      <button class="btn-primary" style="width:100%;justify-content:center;margin-top:8px;" data-onclick="doLogin()">Sign In →</button>
       <p id="login-err" style="color:var(--danger);font-size:13px;margin-top:12px;display:none;text-align:center;">Incorrect password. Try again.</p>
     </div>
   </div>
@@ -472,13 +472,13 @@ body{background:var(--bg);color:var(--white);font-family:'Plus Jakarta Sans',san
       </div>
       <nav class="sidebar-nav">
         <div class="nav-section">Main</div>
-        <button class="nav-item active" onclick="showDash('overview')" id="dnav-overview"><span class="nav-icon">📊</span>Overview</button>
-        <button class="nav-item" onclick="showDash('clients')" id="dnav-clients"><span class="nav-icon">👥</span>Clients</button>
+        <button class="nav-item active" data-onclick="showDash('overview')" id="dnav-overview"><span class="nav-icon">📊</span>Overview</button>
+        <button class="nav-item" data-onclick="showDash('clients')" id="dnav-clients"><span class="nav-icon">👥</span>Clients</button>
         <div class="nav-section">Tools</div>
-        <button class="nav-item" onclick="showDash('onboard-link')" id="dnav-onboard-link"><span class="nav-icon">🔗</span>Onboarding Link</button>
+        <button class="nav-item" data-onclick="showDash('onboard-link')" id="dnav-onboard-link"><span class="nav-icon">🔗</span>Onboarding Link</button>
       </nav>
       <div class="sidebar-bottom">
-        <button class="nav-item" onclick="doLogout()" style="color:var(--danger);"><span class="nav-icon">🚪</span>Sign Out</button>
+        <button class="nav-item" data-onclick="doLogout()" style="color:var(--danger);"><span class="nav-icon">🚪</span>Sign Out</button>
       </div>
     </div>
 
@@ -489,7 +489,7 @@ body{background:var(--bg);color:var(--white);font-family:'Plus Jakarta Sans',san
       <div id="dpanel-overview" class="dpanel">
         <div class="dash-header">
           <div><div class="dash-title">Good morning, SiO 👋</div><div class="dash-subtitle">Here's what's happening with your clients</div></div>
-          <button class="btn-primary btn-sm" onclick="showDash('clients')">View All Clients</button>
+          <button class="btn-primary btn-sm" data-onclick="showDash('clients')">View All Clients</button>
         </div>
         <div class="stats-grid">
           <div class="stat-card"><div class="stat-icon">👥</div><div class="stat-val" id="stat-total">0</div><div class="stat-lbl">Total Clients</div></div>
@@ -514,16 +514,16 @@ body{background:var(--bg);color:var(--white);font-family:'Plus Jakarta Sans',san
       <!-- CLIENT DETAIL -->
       <div id="dpanel-client-detail" class="dpanel" style="display:none;">
         <div class="dash-header">
-          <div><button class="btn-sm btn-blue" onclick="showDash('clients')" style="margin-bottom:8px;">← Back to Clients</button><div class="dash-title" id="detail-title">Client Name</div><div class="dash-subtitle" id="detail-sub">Client details and strategy</div></div>
+          <div><button class="btn-sm btn-blue" data-onclick="showDash('clients')" style="margin-bottom:8px;">← Back to Clients</button><div class="dash-title" id="detail-title">Client Name</div><div class="dash-subtitle" id="detail-sub">Client details and strategy</div></div>
         </div>
         <div class="client-detail-header" id="detail-header"></div>
         <div class="tools-tabs">
-          <button class="tool-tab active" onclick="showTool('pillars',this)">📌 Content Pillars</button>
-          <button class="tool-tab" onclick="showTool('hooks',this)">🎣 Hook Formulas</button>
-          <button class="tool-tab" onclick="showTool('calendar',this)">📅 Content Calendar</button>
-          <button class="tool-tab" onclick="showTool('platforms',this)">📱 Platform Recs</button>
-          <button class="tool-tab" onclick="showTool('competitors',this)">🔍 Competitor Analysis</button>
-          <button class="tool-tab" onclick="showTool('kpi',this)">📈 KPI Tracker</button>
+          <button class="tool-tab active" data-onclick="showTool('pillars',this)">📌 Content Pillars</button>
+          <button class="tool-tab" data-onclick="showTool('hooks',this)">🎣 Hook Formulas</button>
+          <button class="tool-tab" data-onclick="showTool('calendar',this)">📅 Content Calendar</button>
+          <button class="tool-tab" data-onclick="showTool('platforms',this)">📱 Platform Recs</button>
+          <button class="tool-tab" data-onclick="showTool('competitors',this)">🔍 Competitor Analysis</button>
+          <button class="tool-tab" data-onclick="showTool('kpi',this)">📈 KPI Tracker</button>
         </div>
         <div id="tool-pillars" class="tool-panel active"><div id="pillars-content"></div></div>
         <div id="tool-hooks" class="tool-panel"><div id="hooks-content"></div></div>
@@ -542,7 +542,7 @@ body{background:var(--bg);color:var(--white);font-family:'Plus Jakarta Sans',san
             <p style="font-size:13px;color:var(--muted);margin-bottom:12px;">Share this link with your clients. They fill in a comprehensive 7-step questionnaire and you get their full brief here in your dashboard.</p>
             <div class="copy-link-box">
               <span class="copy-link-url" id="onboard-url">Loading...</span>
-              <button class="copy-btn" onclick="copyOnboardLink()">📋 Copy Link</button>
+              <button class="copy-btn" data-onclick="copyOnboardLink()">📋 Copy Link</button>
             </div>
             <p style="font-size:12px;color:var(--muted);">✅ Clients only see a thank you page after submitting — they never see your dashboard or generated strategies.</p>
           </div>
@@ -789,14 +789,14 @@ function clientRowHTML(c){
   const initials = c.data.name.substring(0,2).toUpperCase();
   const statusClass = c.status === 'active' ? 'status-active' : c.status === 'new' ? 'status-new' : 'status-pending';
   const statusLabel = c.status === 'active' ? '● Active' : c.status === 'new' ? '● New' : '● Pending';
-  return `<div class="client-row" onclick="openClient('${c.id}')">
+  return `<div class="client-row" data-onclick="openClient('${c.id}')">
     <div class="client-avatar">${initials}</div>
     <div class="client-info">
       <div class="client-name">${c.data.name}</div>
       <div class="client-meta">${c.data.stage || 'Stage TBD'} · ${c.data.category.slice(0,2).join(', ') || 'Category TBD'} · Submitted ${c.submittedAt}</div>
     </div>
     <span class="client-status ${statusClass}">${statusLabel}</span>
-    <button class="btn-sm btn-blue" onclick="event.stopPropagation();openClient('${c.id}')">View Brief →</button>
+    <button class="btn-sm btn-blue" data-onclick="event.stopPropagation();openClient('${c.id}')">View Brief →</button>
   </div>`;
 }
 
@@ -1181,7 +1181,7 @@ function generateKPI(client){
       <div class="kpi-input-card"><label>Impressions</label><input class="kpi-num-input" type="number" placeholder="0" id="kpi-impressions"/></div>
       <div class="kpi-input-card"><label>New Members</label><input class="kpi-num-input" type="number" placeholder="0" id="kpi-members"/></div>
     </div>
-    <button class="btn-primary btn-sm" onclick="saveKPI('${client.id}')">Save This Week's Numbers</button>
+    <button class="btn-primary btn-sm" data-onclick="saveKPI('${client.id}')">Save This Week's Numbers</button>
     <div style="margin-top:24px;">
       <div style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--blue3);margin-bottom:12px;">Weekly History</div>
       <div class="kpi-history" id="kpi-history-list">
@@ -1238,6 +1238,65 @@ document.addEventListener('keydown', function(e){
   if(e.ctrlKey && e.shiftKey && e.key === 'A'){
     goToDash();
   }
+});
+
+// Handle keypress via delegation
+document.addEventListener('keypress', function(e) {
+    if(e.key === 'Enter') {
+        var active = document.activeElement;
+        if(active) {
+            var handler = active.getAttribute('data-onkeypress');
+            if(handler) {
+                try { eval(handler); } catch(err) {}
+            }
+            if(active.id === 'login-pw') { doLogin(); }
+        }
+    }
+});
+</script>
+
+<script>
+// Event delegation - handles all clicks
+document.addEventListener('click', function(e) {
+    var el = e.target;
+    // Walk up the DOM to find element with data-onclick
+    while(el && el !== document) {
+        var handler = el.getAttribute('data-onclick');
+        if(handler) {
+            e.preventDefault();
+            try {
+                eval(handler);
+            } catch(err) {
+                console.error('Handler error:', handler, err);
+            }
+            return;
+        }
+        el = el.parentElement;
+    }
+});
+
+// Also handle Enter key on password input
+document.addEventListener('keypress', function(e) {
+    if(e.key === 'Enter') {
+        var active = document.activeElement;
+        if(active && active.id === 'login-pw') {
+            doLogin();
+        }
+    }
+});
+
+// Handle keypress via delegation
+document.addEventListener('keypress', function(e) {
+    if(e.key === 'Enter') {
+        var active = document.activeElement;
+        if(active) {
+            var handler = active.getAttribute('data-onkeypress');
+            if(handler) {
+                try { eval(handler); } catch(err) {}
+            }
+            if(active.id === 'login-pw') { doLogin(); }
+        }
+    }
 });
 </script>
 </body>
